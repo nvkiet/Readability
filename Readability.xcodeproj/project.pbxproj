@@ -13,14 +13,14 @@
 		2E1581391907691F0086C49E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E1581371907691F0086C49E /* InfoPlist.strings */; };
 		2E15813B1907691F0086C49E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15813A1907691F0086C49E /* main.m */; };
 		2E15813F1907691F0086C49E /* RDBAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E15813E1907691F0086C49E /* RDBAppDelegate.m */; };
-		2E1581421907691F0086C49E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2E1581401907691F0086C49E /* Main.storyboard */; };
-		2E1581451907691F0086C49E /* RDBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E1581441907691F0086C49E /* RDBViewController.m */; };
 		2E1581471907691F0086C49E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2E1581461907691F0086C49E /* Images.xcassets */; };
 		2E15814E1907691F0086C49E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E15814D1907691F0086C49E /* XCTest.framework */; };
 		2E15814F1907691F0086C49E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E15812E1907691F0086C49E /* Foundation.framework */; };
 		2E1581501907691F0086C49E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E1581321907691F0086C49E /* UIKit.framework */; };
 		2E158158190769200086C49E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2E158156190769200086C49E /* InfoPlist.strings */; };
 		2E15815A190769200086C49E /* ReadabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E158159190769200086C49E /* ReadabilityTests.m */; };
+		2E158168190769B50086C49E /* RDBArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E158166190769B50086C49E /* RDBArticleViewController.m */; };
+		2E158169190769B50086C49E /* RDBArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E158167190769B50086C49E /* RDBArticleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,15 +44,15 @@
 		2E15813C1907691F0086C49E /* Readability-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Readability-Prefix.pch"; sourceTree = "<group>"; };
 		2E15813D1907691F0086C49E /* RDBAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDBAppDelegate.h; sourceTree = "<group>"; };
 		2E15813E1907691F0086C49E /* RDBAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDBAppDelegate.m; sourceTree = "<group>"; };
-		2E1581411907691F0086C49E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		2E1581431907691F0086C49E /* RDBViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RDBViewController.h; sourceTree = "<group>"; };
-		2E1581441907691F0086C49E /* RDBViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RDBViewController.m; sourceTree = "<group>"; };
 		2E1581461907691F0086C49E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		2E15814C1907691F0086C49E /* ReadabilityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReadabilityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E15814D1907691F0086C49E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		2E1581551907691F0086C49E /* ReadabilityTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ReadabilityTests-Info.plist"; sourceTree = "<group>"; };
 		2E158157190769200086C49E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2E158159190769200086C49E /* ReadabilityTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReadabilityTests.m; sourceTree = "<group>"; };
+		2E158165190769B50086C49E /* RDBArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBArticleViewController.h; sourceTree = "<group>"; };
+		2E158166190769B50086C49E /* RDBArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBArticleViewController.m; sourceTree = "<group>"; };
+		2E158167190769B50086C49E /* RDBArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDBArticleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,9 +114,7 @@
 			children = (
 				2E15813D1907691F0086C49E /* RDBAppDelegate.h */,
 				2E15813E1907691F0086C49E /* RDBAppDelegate.m */,
-				2E1581401907691F0086C49E /* Main.storyboard */,
-				2E1581431907691F0086C49E /* RDBViewController.h */,
-				2E1581441907691F0086C49E /* RDBViewController.m */,
+				2E158163190769840086C49E /* Controllers */,
 				2E1581461907691F0086C49E /* Images.xcassets */,
 				2E1581351907691F0086C49E /* Supporting Files */,
 			);
@@ -150,6 +148,24 @@
 				2E158156190769200086C49E /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2E158163190769840086C49E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2E158164190769840086C49E /* Article */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		2E158164190769840086C49E /* Article */ = {
+			isa = PBXGroup;
+			children = (
+				2E158165190769B50086C49E /* RDBArticleViewController.h */,
+				2E158166190769B50086C49E /* RDBArticleViewController.m */,
+				2E158167190769B50086C49E /* RDBArticleViewController.xib */,
+			);
+			path = Article;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +247,7 @@
 			files = (
 				2E1581471907691F0086C49E /* Images.xcassets in Resources */,
 				2E1581391907691F0086C49E /* InfoPlist.strings in Resources */,
-				2E1581421907691F0086C49E /* Main.storyboard in Resources */,
+				2E158169190769B50086C49E /* RDBArticleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,7 +268,7 @@
 			files = (
 				2E15813B1907691F0086C49E /* main.m in Sources */,
 				2E15813F1907691F0086C49E /* RDBAppDelegate.m in Sources */,
-				2E1581451907691F0086C49E /* RDBViewController.m in Sources */,
+				2E158168190769B50086C49E /* RDBArticleViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +297,6 @@
 				2E1581381907691F0086C49E /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2E1581401907691F0086C49E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2E1581411907691F0086C49E /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		2E158156190769200086C49E /* InfoPlist.strings */ = {
@@ -380,6 +388,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readability/Readability-Prefix.pch";
 				INFOPLIST_FILE = "Readability/Readability-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -393,6 +402,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readability/Readability-Prefix.pch";
 				INFOPLIST_FILE = "Readability/Readability-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

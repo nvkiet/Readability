@@ -7,12 +7,21 @@
 //
 
 #import "RDBAppDelegate.h"
+#import "RDBArticleViewController.h"
 
 @implementation RDBAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    RDBArticleViewController *articleVC = [[RDBArticleViewController alloc] initWithNibName:NSStringFromClass([RDBArticleViewController class]) bundle:nil];
+    
+    self.navController = [[UINavigationController alloc] initWithRootViewController:articleVC];
+    self.window.rootViewController = self.navController;
+    
+    [self.window makeKeyAndVisible];
+
     return YES;
 }
 							
