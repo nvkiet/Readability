@@ -6,6 +6,7 @@
 
 #import <Availability.h>
 
+#define LINK_ARTICLE @"http://thethao.vnexpress.net/tin-tuc/cac-mon-khac/vo-si-49-tuoi-lap-ky-luc-moi-cua-quyen-anh-the-gioi-2980728.html"
 
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."

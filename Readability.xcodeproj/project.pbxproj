@@ -21,6 +21,7 @@
 		2E15815A190769200086C49E /* ReadabilityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E158159190769200086C49E /* ReadabilityTests.m */; };
 		2E158168190769B50086C49E /* RDBArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E158166190769B50086C49E /* RDBArticleViewController.m */; };
 		2E158169190769B50086C49E /* RDBArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E158167190769B50086C49E /* RDBArticleViewController.xib */; };
+		2E15816E190780250086C49E /* readability.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E15816C190780120086C49E /* readability.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		2E158165190769B50086C49E /* RDBArticleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBArticleViewController.h; sourceTree = "<group>"; };
 		2E158166190769B50086C49E /* RDBArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBArticleViewController.m; sourceTree = "<group>"; };
 		2E158167190769B50086C49E /* RDBArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDBArticleViewController.xib; sourceTree = "<group>"; };
+		2E15816C190780120086C49E /* readability.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = readability.js; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 				2E15813D1907691F0086C49E /* RDBAppDelegate.h */,
 				2E15813E1907691F0086C49E /* RDBAppDelegate.m */,
 				2E158163190769840086C49E /* Controllers */,
+				2E15816A19077FC40086C49E /* Resouces */,
 				2E1581461907691F0086C49E /* Images.xcassets */,
 				2E1581351907691F0086C49E /* Supporting Files */,
 			);
@@ -166,6 +169,22 @@
 				2E158167190769B50086C49E /* RDBArticleViewController.xib */,
 			);
 			path = Article;
+			sourceTree = "<group>";
+		};
+		2E15816A19077FC40086C49E /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				2E15816B19077FC40086C49E /* Javascripts */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		2E15816B19077FC40086C49E /* Javascripts */ = {
+			isa = PBXGroup;
+			children = (
+				2E15816C190780120086C49E /* readability.js */,
+			);
+			path = Javascripts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E15816E190780250086C49E /* readability.js in Resources */,
 				2E1581471907691F0086C49E /* Images.xcassets in Resources */,
 				2E1581391907691F0086C49E /* InfoPlist.strings in Resources */,
 				2E158169190769B50086C49E /* RDBArticleViewController.xib in Resources */,

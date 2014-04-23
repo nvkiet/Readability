@@ -8,8 +8,10 @@
 
 #import "RDBArticleViewController.h"
 
-@interface RDBArticleViewController ()
+@interface RDBArticleViewController ()<UIWebViewDelegate>
+@property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+@property (nonatomic, strong) NSString *htmlString;
 @end
 
 @implementation RDBArticleViewController
@@ -26,7 +28,50 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.webView.delegate =self;
+    
+    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithTitle:@"Reload" style:UIBarButtonItemStyleBordered target:self action:@selector(reloadButtonClicked:)];
+    self.navigationItem.rightBarButtonItem = reloadButton;
+
+    NSURL *articleURL = [[NSURL alloc] initWithString:LINK_ARTICLE];
+    NSError *error;
+    self.htmlString = [NSString stringWithContentsOfURL:articleURL
+                                                    encoding:NSUTF8StringEncoding
+                                                       error:&error];
+    if (error) {
+        NSLog(@"Load HTML has some errors: %@",[error localizedDescription]);
+    }
+    else{
+        NSURL* javascriptURL = [[NSBundle mainBundle] URLForResource:@"readability" withExtension:@"js"];
+        [self.webView loadHTMLString:self.htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
+    }
+}
+
+
+#pragma mark - UIWebview Delegate
+
+- (void)webViewDidStartLoad:(UIWebView *)webView
+{
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView
+{
+    [self.webView stringByEvaluatingJavaScriptFromString:@"init()"];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
+{
+}
+
+#pragma mark - Actions
+
+- (void)reloadButtonClicked: (id)sender
+{
+//   NSURL* javascriptURL = [[NSBundle mainBundle] URLForResource:@"readability" withExtension:@"js"];
+//   [self.webView loadHTMLString:self.htmlString baseURL:javascriptURL];
+    
+    NSLog(@"----%@", self.htmlString);
 }
 
 - (void)didReceiveMemoryWarning
