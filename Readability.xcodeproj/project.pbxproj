@@ -22,6 +22,7 @@
 		2E158168190769B50086C49E /* RDBArticleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E158166190769B50086C49E /* RDBArticleViewController.m */; };
 		2E158169190769B50086C49E /* RDBArticleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2E158167190769B50086C49E /* RDBArticleViewController.xib */; };
 		2E15816E190780250086C49E /* readability.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E15816C190780120086C49E /* readability.js */; };
+		2E5678CB1909255E000B5214 /* jquery-1.11.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E5678CA1909255E000B5214 /* jquery-1.11.0.min.js */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		2E158166190769B50086C49E /* RDBArticleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBArticleViewController.m; sourceTree = "<group>"; };
 		2E158167190769B50086C49E /* RDBArticleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDBArticleViewController.xib; sourceTree = "<group>"; };
 		2E15816C190780120086C49E /* readability.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = readability.js; sourceTree = "<group>"; };
+		2E5678CA1909255E000B5214 /* jquery-1.11.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.11.0.min.js"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,6 +184,7 @@
 		2E15816B19077FC40086C49E /* Javascripts */ = {
 			isa = PBXGroup;
 			children = (
+				2E5678CA1909255E000B5214 /* jquery-1.11.0.min.js */,
 				2E15816C190780120086C49E /* readability.js */,
 			);
 			path = Javascripts;
@@ -264,6 +267,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E5678CB1909255E000B5214 /* jquery-1.11.0.min.js in Resources */,
 				2E15816E190780250086C49E /* readability.js in Resources */,
 				2E1581471907691F0086C49E /* Images.xcassets in Resources */,
 				2E1581391907691F0086C49E /* InfoPlist.strings in Resources */,
@@ -405,11 +409,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: KIET NGUYEN (Z83TCZVXN2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readability/Readability-Prefix.pch";
 				INFOPLIST_FILE = "Readability/Readability-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00BF5F33-90AB-49BA-98E2-3D45924EFCF2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -419,11 +425,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: KIET NGUYEN (Z83TCZVXN2)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: KIET NGUYEN (Z83TCZVXN2)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Readability/Readability-Prefix.pch";
 				INFOPLIST_FILE = "Readability/Readability-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "00BF5F33-90AB-49BA-98E2-3D45924EFCF2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -487,6 +496,7 @@
 				2E15815F190769200086C49E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2E158160190769200086C49E /* Build configuration list for PBXNativeTarget "ReadabilityTests" */ = {
 			isa = XCConfigurationList;
@@ -495,6 +505,7 @@
 				2E158162190769200086C49E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

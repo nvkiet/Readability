@@ -43,7 +43,18 @@
         NSLog(@"Load HTML has some errors: %@",[error localizedDescription]);
     }
     else{
-        NSURL* javascriptURL = [[NSBundle mainBundle] URLForResource:@"readability" withExtension:@"js"];
+        
+        NSString *jqueryPath = [[NSBundle mainBundle] pathForResource:@"readability" ofType:@"js"];
+        NSString *readabilityJSPath = [[NSBundle mainBundle] pathForResource:@"readability" ofType:@"js"];
+        
+        // Add ref js
+        NSString *refJSString = [NSString stringWithFormat:@"<head> <script src='%@' type='text/javascript' charset='utf-8'></script>  <script src='%@' type='text/javascript' charset='utf-8'></script>", jqueryPath, readabilityJSPath];
+        self.htmlString = [self.htmlString stringByReplacingOccurrencesOfString:@"<head>" withString:refJSString];
+        
+        // Call js function
+        self.htmlString = [self.htmlString stringByReplacingOccurrencesOfString:@"</html>" withString:@"</html><script>$(function(){ readability.init();$('img').attr('style','width:100%');$('.Image').attr('style','font-size:9px'); })</script>"];
+        
+        // Load HTML
         [self.webView loadHTMLString:self.htmlString baseURL:[NSURL fileURLWithPath:[[NSBundle mainBundle] bundlePath]]];
     }
 }
@@ -57,21 +68,23 @@
 
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
-    [self.webView stringByEvaluatingJavaScriptFromString:@"init()"];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
 {
+    if (!error) {
+        NSLog(@"Load successfully!");
+    }
+    else{
+        NSLog(@"Loading has some errors: %@ %@", [error localizedDescription], [error localizedFailureReason]);
+    }
 }
 
 #pragma mark - Actions
 
 - (void)reloadButtonClicked: (id)sender
 {
-//   NSURL* javascriptURL = [[NSBundle mainBundle] URLForResource:@"readability" withExtension:@"js"];
-//   [self.webView loadHTMLString:self.htmlString baseURL:javascriptURL];
-    
-    NSLog(@"----%@", self.htmlString);
+     NSLog(@"%@", self.htmlString);
 }
 
 - (void)didReceiveMemoryWarning
