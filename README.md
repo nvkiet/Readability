@@ -1,4 +1,8 @@
+Readability
 
-Challenge:
-- Input: Link đến 1 bài báo.
-- Output: Bài báo ở dạng rất dễ đọc cho người dùng, bỏ hết các phần khác, chỉ giữ lại nội dung chính của bài báo.
+================
+
+I try to clone Readability app to learn how to code animations in building app.
+
+Readability app: https://itunes.apple.com/vn/app/readability/id460156587?mt=8
+
