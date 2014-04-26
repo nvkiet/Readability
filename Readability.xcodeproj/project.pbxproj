@@ -24,7 +24,32 @@
 		2E15816E190780250086C49E /* readability.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E15816C190780120086C49E /* readability.js */; };
 		2E5678CB1909255E000B5214 /* jquery-1.11.0.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 2E5678CA1909255E000B5214 /* jquery-1.11.0.min.js */; };
 		7CACD87C71234D9C91176B1B /* libPods-Readability.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 07024CB15F8542EE912FEFCC /* libPods-Readability.a */; };
-		92F28086190B51FC00DA385B /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 92F28085190B51FC00DA385B /* styles.css */; };
+		92B854EF190B570B0074F24B /* GothamNarrow-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D6190B570B0074F24B /* GothamNarrow-Black.otf */; };
+		92B854F0190B570B0074F24B /* GothamNarrSSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D7190B570B0074F24B /* GothamNarrSSm-Bold.otf */; };
+		92B854F1190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D8190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf */; };
+		92B854F2190B570B0074F24B /* GothamNarrSSm-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D9190B570B0074F24B /* GothamNarrSSm-Book.otf */; };
+		92B854F3190B570B0074F24B /* GothamNarrSSm-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854DA190B570B0074F24B /* GothamNarrSSm-BookItalic.otf */; };
+		92B854F4190B570B0074F24B /* MercuryDisplay-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854DB190B570B0074F24B /* MercuryDisplay-Bold.otf */; };
+		92B854F5190B570B0074F24B /* MercurySSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854DC190B570B0074F24B /* MercurySSm-Bold.otf */; };
+		92B854F6190B570B0074F24B /* MercurySSm-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854DD190B570B0074F24B /* MercurySSm-BoldItalic.otf */; };
+		92B854F7190B570B0074F24B /* MercurySSm-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854DE190B570B0074F24B /* MercurySSm-Book.otf */; };
+		92B854F8190B570B0074F24B /* MercurySSm-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854DF190B570B0074F24B /* MercurySSm-BookItalic.otf */; };
+		92B854F9190B570B0074F24B /* readabilicons.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E0190B570B0074F24B /* readabilicons.otf */; };
+		92B854FA190B570B0074F24B /* Sentinel-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E1190B570B0074F24B /* Sentinel-Black.otf */; };
+		92B854FB190B570B0074F24B /* SentinelSSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E2190B570B0074F24B /* SentinelSSm-Bold.otf */; };
+		92B854FC190B570B0074F24B /* SentinelSSm-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E3190B570B0074F24B /* SentinelSSm-BoldItalic.otf */; };
+		92B854FD190B570B0074F24B /* SentinelSSm-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E4190B570B0074F24B /* SentinelSSm-Book.otf */; };
+		92B854FE190B570B0074F24B /* SentinelSSm-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E5190B570B0074F24B /* SentinelSSm-BookItalic.otf */; };
+		92B854FF190B570B0074F24B /* Vitesse-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E6190B570B0074F24B /* Vitesse-Black.otf */; };
+		92B85500190B570B0074F24B /* VitesseSSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E7190B570B0074F24B /* VitesseSSm-Bold.otf */; };
+		92B85501190B570B0074F24B /* VitesseSSm-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E8190B570B0074F24B /* VitesseSSm-BoldItalic.otf */; };
+		92B85502190B570B0074F24B /* VitesseSSm-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854E9190B570B0074F24B /* VitesseSSm-Book.otf */; };
+		92B85503190B570B0074F24B /* VitesseSSm-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854EA190B570B0074F24B /* VitesseSSm-BookItalic.otf */; };
+		92B85504190B570B0074F24B /* WhitneySSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854EB190B570B0074F24B /* WhitneySSm-Bold.otf */; };
+		92B85505190B570B0074F24B /* WhitneySSm-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854EC190B570B0074F24B /* WhitneySSm-BoldItalic.otf */; };
+		92B85506190B570B0074F24B /* WhitneySSm-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854ED190B570B0074F24B /* WhitneySSm-Book.otf */; };
+		92B85507190B570B0074F24B /* WhitneySSm-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854EE190B570B0074F24B /* WhitneySSm-BookItalic.otf */; };
+		92F28088190B547600DA385B /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 92F28087190B547600DA385B /* styles.css */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,7 +86,32 @@
 		2E15816C190780120086C49E /* readability.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = readability.js; sourceTree = "<group>"; };
 		2E5678CA1909255E000B5214 /* jquery-1.11.0.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "jquery-1.11.0.min.js"; sourceTree = "<group>"; };
 		6B271AEEA3BA41588B4578B7 /* Pods-Readability.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Readability.xcconfig"; path = "Pods/Pods-Readability.xcconfig"; sourceTree = "<group>"; };
-		92F28085190B51FC00DA385B /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		92B854D6190B570B0074F24B /* GothamNarrow-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Black.otf"; sourceTree = "<group>"; };
+		92B854D7190B570B0074F24B /* GothamNarrSSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrSSm-Bold.otf"; sourceTree = "<group>"; };
+		92B854D8190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrSSm-BoldItalic.otf"; sourceTree = "<group>"; };
+		92B854D9190B570B0074F24B /* GothamNarrSSm-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrSSm-Book.otf"; sourceTree = "<group>"; };
+		92B854DA190B570B0074F24B /* GothamNarrSSm-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrSSm-BookItalic.otf"; sourceTree = "<group>"; };
+		92B854DB190B570B0074F24B /* MercuryDisplay-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MercuryDisplay-Bold.otf"; sourceTree = "<group>"; };
+		92B854DC190B570B0074F24B /* MercurySSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MercurySSm-Bold.otf"; sourceTree = "<group>"; };
+		92B854DD190B570B0074F24B /* MercurySSm-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MercurySSm-BoldItalic.otf"; sourceTree = "<group>"; };
+		92B854DE190B570B0074F24B /* MercurySSm-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MercurySSm-Book.otf"; sourceTree = "<group>"; };
+		92B854DF190B570B0074F24B /* MercurySSm-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MercurySSm-BookItalic.otf"; sourceTree = "<group>"; };
+		92B854E0190B570B0074F24B /* readabilicons.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = readabilicons.otf; sourceTree = "<group>"; };
+		92B854E1190B570B0074F24B /* Sentinel-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sentinel-Black.otf"; sourceTree = "<group>"; };
+		92B854E2190B570B0074F24B /* SentinelSSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SentinelSSm-Bold.otf"; sourceTree = "<group>"; };
+		92B854E3190B570B0074F24B /* SentinelSSm-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SentinelSSm-BoldItalic.otf"; sourceTree = "<group>"; };
+		92B854E4190B570B0074F24B /* SentinelSSm-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SentinelSSm-Book.otf"; sourceTree = "<group>"; };
+		92B854E5190B570B0074F24B /* SentinelSSm-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SentinelSSm-BookItalic.otf"; sourceTree = "<group>"; };
+		92B854E6190B570B0074F24B /* Vitesse-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Vitesse-Black.otf"; sourceTree = "<group>"; };
+		92B854E7190B570B0074F24B /* VitesseSSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VitesseSSm-Bold.otf"; sourceTree = "<group>"; };
+		92B854E8190B570B0074F24B /* VitesseSSm-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VitesseSSm-BoldItalic.otf"; sourceTree = "<group>"; };
+		92B854E9190B570B0074F24B /* VitesseSSm-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VitesseSSm-Book.otf"; sourceTree = "<group>"; };
+		92B854EA190B570B0074F24B /* VitesseSSm-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VitesseSSm-BookItalic.otf"; sourceTree = "<group>"; };
+		92B854EB190B570B0074F24B /* WhitneySSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WhitneySSm-Bold.otf"; sourceTree = "<group>"; };
+		92B854EC190B570B0074F24B /* WhitneySSm-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WhitneySSm-BoldItalic.otf"; sourceTree = "<group>"; };
+		92B854ED190B570B0074F24B /* WhitneySSm-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WhitneySSm-Book.otf"; sourceTree = "<group>"; };
+		92B854EE190B570B0074F24B /* WhitneySSm-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "WhitneySSm-BookItalic.otf"; sourceTree = "<group>"; };
+		92F28087190B547600DA385B /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +236,7 @@
 			children = (
 				2E15816B19077FC40086C49E /* Javascripts */,
 				92F28084190B51FC00DA385B /* Stylesheets */,
+				92B854D5190B570B0074F24B /* Fonts */,
 			);
 			path = Resouces;
 			sourceTree = "<group>";
@@ -199,10 +250,42 @@
 			path = Javascripts;
 			sourceTree = "<group>";
 		};
+		92B854D5190B570B0074F24B /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				92B854D6190B570B0074F24B /* GothamNarrow-Black.otf */,
+				92B854D7190B570B0074F24B /* GothamNarrSSm-Bold.otf */,
+				92B854D8190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf */,
+				92B854D9190B570B0074F24B /* GothamNarrSSm-Book.otf */,
+				92B854DA190B570B0074F24B /* GothamNarrSSm-BookItalic.otf */,
+				92B854DB190B570B0074F24B /* MercuryDisplay-Bold.otf */,
+				92B854DC190B570B0074F24B /* MercurySSm-Bold.otf */,
+				92B854DD190B570B0074F24B /* MercurySSm-BoldItalic.otf */,
+				92B854DE190B570B0074F24B /* MercurySSm-Book.otf */,
+				92B854DF190B570B0074F24B /* MercurySSm-BookItalic.otf */,
+				92B854E0190B570B0074F24B /* readabilicons.otf */,
+				92B854E1190B570B0074F24B /* Sentinel-Black.otf */,
+				92B854E2190B570B0074F24B /* SentinelSSm-Bold.otf */,
+				92B854E3190B570B0074F24B /* SentinelSSm-BoldItalic.otf */,
+				92B854E4190B570B0074F24B /* SentinelSSm-Book.otf */,
+				92B854E5190B570B0074F24B /* SentinelSSm-BookItalic.otf */,
+				92B854E6190B570B0074F24B /* Vitesse-Black.otf */,
+				92B854E7190B570B0074F24B /* VitesseSSm-Bold.otf */,
+				92B854E8190B570B0074F24B /* VitesseSSm-BoldItalic.otf */,
+				92B854E9190B570B0074F24B /* VitesseSSm-Book.otf */,
+				92B854EA190B570B0074F24B /* VitesseSSm-BookItalic.otf */,
+				92B854EB190B570B0074F24B /* WhitneySSm-Bold.otf */,
+				92B854EC190B570B0074F24B /* WhitneySSm-BoldItalic.otf */,
+				92B854ED190B570B0074F24B /* WhitneySSm-Book.otf */,
+				92B854EE190B570B0074F24B /* WhitneySSm-BookItalic.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		92F28084190B51FC00DA385B /* Stylesheets */ = {
 			isa = PBXGroup;
 			children = (
-				92F28085190B51FC00DA385B /* styles.css */,
+				92F28087190B547600DA385B /* styles.css */,
 			);
 			path = Stylesheets;
 			sourceTree = "<group>";
@@ -289,12 +372,37 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92B85502190B570B0074F24B /* VitesseSSm-Book.otf in Resources */,
 				2E5678CB1909255E000B5214 /* jquery-1.11.0.min.js in Resources */,
+				92B85501190B570B0074F24B /* VitesseSSm-BoldItalic.otf in Resources */,
+				92B854F4190B570B0074F24B /* MercuryDisplay-Bold.otf in Resources */,
+				92B854F2190B570B0074F24B /* GothamNarrSSm-Book.otf in Resources */,
+				92B854FD190B570B0074F24B /* SentinelSSm-Book.otf in Resources */,
+				92B854FE190B570B0074F24B /* SentinelSSm-BookItalic.otf in Resources */,
+				92B854F3190B570B0074F24B /* GothamNarrSSm-BookItalic.otf in Resources */,
+				92B854F7190B570B0074F24B /* MercurySSm-Book.otf in Resources */,
+				92B85507190B570B0074F24B /* WhitneySSm-BookItalic.otf in Resources */,
+				92B854FB190B570B0074F24B /* SentinelSSm-Bold.otf in Resources */,
+				92B854F0190B570B0074F24B /* GothamNarrSSm-Bold.otf in Resources */,
 				2E15816E190780250086C49E /* readability.js in Resources */,
 				2E1581471907691F0086C49E /* Images.xcassets in Resources */,
-				92F28086190B51FC00DA385B /* styles.css in Resources */,
+				92B85506190B570B0074F24B /* WhitneySSm-Book.otf in Resources */,
+				92B854F8190B570B0074F24B /* MercurySSm-BookItalic.otf in Resources */,
+				92B854FC190B570B0074F24B /* SentinelSSm-BoldItalic.otf in Resources */,
+				92B854FA190B570B0074F24B /* Sentinel-Black.otf in Resources */,
+				92B854F5190B570B0074F24B /* MercurySSm-Bold.otf in Resources */,
+				92F28088190B547600DA385B /* styles.css in Resources */,
+				92B85505190B570B0074F24B /* WhitneySSm-BoldItalic.otf in Resources */,
 				2E1581391907691F0086C49E /* InfoPlist.strings in Resources */,
+				92B854F6190B570B0074F24B /* MercurySSm-BoldItalic.otf in Resources */,
+				92B854F1190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf in Resources */,
+				92B854FF190B570B0074F24B /* Vitesse-Black.otf in Resources */,
 				2E158169190769B50086C49E /* RDBArticleViewController.xib in Resources */,
+				92B85504190B570B0074F24B /* WhitneySSm-Bold.otf in Resources */,
+				92B854EF190B570B0074F24B /* GothamNarrow-Black.otf in Resources */,
+				92B85500190B570B0074F24B /* VitesseSSm-Bold.otf in Resources */,
+				92B854F9190B570B0074F24B /* readabilicons.otf in Resources */,
+				92B85503190B570B0074F24B /* VitesseSSm-BookItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,7 +530,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -454,7 +562,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -473,7 +581,7 @@
 				INFOPLIST_FILE = "Readability/Readability-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "00BF5F33-90AB-49BA-98E2-3D45924EFCF2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -491,7 +599,7 @@
 				INFOPLIST_FILE = "Readability/Readability-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "00BF5F33-90AB-49BA-98E2-3D45924EFCF2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

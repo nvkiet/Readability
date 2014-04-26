@@ -77,12 +77,15 @@
         NSLog(@"Load HTML has some errors: %@",[error localizedDescription]);
     }
     else{
-        
         NSString *jqueryPath = [[NSBundle mainBundle] pathForResource:@"readability" ofType:@"js"];
         NSString *readabilityJSPath = [[NSBundle mainBundle] pathForResource:@"readability" ofType:@"js"];
+        NSString *styleCSSPath = [[NSBundle mainBundle] pathForResource:@"styles" ofType:@"css"];
+        
+        // Add stylesheet
+        NSString *styleSheetString = [NSString stringWithFormat:@"<link rel='stylesheet' type='text/css' href='%@'>", styleCSSPath];
         
         // Add ref js
-        NSString *refJSString = [NSString stringWithFormat:@"<head> <script src='%@' type='text/javascript' charset='utf-8'></script>  <script src='%@' type='text/javascript' charset='utf-8'></script>", jqueryPath, readabilityJSPath];
+        NSString *refJSString = [NSString stringWithFormat:@"<head> <script src='%@' type='text/javascript' charset='utf-8'></script>  <script src='%@' type='text/javascript' charset='utf-8'></script> %@", jqueryPath, readabilityJSPath, styleSheetString];
         self.htmlString = [self.htmlString stringByReplacingOccurrencesOfString:@"<head>" withString:refJSString];
         
         // Call js function
