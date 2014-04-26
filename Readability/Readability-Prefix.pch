@@ -7,7 +7,11 @@
 #import <Availability.h>
 
 #define LINK_ARTICLE @"http://vn.techinasia.com/choi-kham-ban-be-bang-knock-to-call/"
-//http://thethao.vnexpress.net/tin-tuc/cac-mon-khac/vo-si-49-tuoi-lap-ky-luc-moi-cua-quyen-anh-the-gioi-2980728.html
+
+
+// Vendors
+#import "SVProgressHUD.h"
+
 #ifndef __IPHONE_5_0
 #warning "This project uses features only available in iOS SDK 5.0 and later."
 #endif

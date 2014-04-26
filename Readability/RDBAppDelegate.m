@@ -7,7 +7,7 @@
 //
 
 #import "RDBAppDelegate.h"
-#import "RDBArticleViewController.h"
+#import "RDBReadingListViewController.h"
 
 @implementation RDBAppDelegate
 
@@ -15,9 +15,9 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     
-    RDBArticleViewController *articleVC = [[RDBArticleViewController alloc] initWithNibName:NSStringFromClass([RDBArticleViewController class]) bundle:nil];
+    RDBReadingListViewController *readingListVC = [[RDBReadingListViewController alloc] initWithNibName:NSStringFromClass([RDBReadingListViewController class]) bundle:nil];
     
-    self.navController = [[UINavigationController alloc] initWithRootViewController:articleVC];
+    self.navController = [[UINavigationController alloc] initWithRootViewController:readingListVC];
     self.window.rootViewController = self.navController;
     
     [self.window makeKeyAndVisible];

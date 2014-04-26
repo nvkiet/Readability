@@ -12,7 +12,6 @@
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
 @property (nonatomic, strong) NSString *htmlString;
-@property (nonatomic) BOOL shouldRequest;
 @property (nonatomic, strong) NSString *linkArticle;
 
 @end
@@ -34,10 +33,12 @@
     
     self.webView.delegate =self;
     
-    self.shouldRequest = YES;
-
     // Load article
     self.linkArticle = LINK_ARTICLE;
+
+    self.navigationController.navigationBarHidden = YES;
+    
+    [SVProgressHUD show];
     
     [self readabilityWebpage];
 }
@@ -53,6 +54,8 @@
 - (void)webViewDidFinishLoad:(UIWebView *)webView
 {
     self.webView.hidden = NO;
+    
+    [SVProgressHUD dismiss];
 }
 
 - (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error
