@@ -13,10 +13,7 @@
 
 @property (nonatomic, strong) NSString *htmlString;
 @property (nonatomic) BOOL shouldRequest;
-@property (nonatomic) BOOL isReadingView; // Mode view
 @property (nonatomic, strong) NSString *linkArticle;
-
-@property (nonatomic, strong) UIBarButtonItem *switchButtion;
 
 @end
 
@@ -38,15 +35,7 @@
     self.webView.delegate =self;
     
     self.shouldRequest = YES;
-    self.isReadingView = YES;
-    
-    // Bar buttons
-    UIBarButtonItem *reloadButton = [[UIBarButtonItem alloc] initWithTitle:@"Reload" style:UIBarButtonItemStyleBordered target:self action:@selector(reloadButtonClicked:)];
-    self.navigationItem.rightBarButtonItem = reloadButton;
 
-    self.switchButtion = [[UIBarButtonItem alloc] initWithTitle:@"Web view" style:UIBarButtonItemStyleBordered target:self action:@selector(switchButtionClicked:)];
-    self.navigationItem.leftBarButtonItem = self.switchButtion;
-    
     // Load article
     self.linkArticle = LINK_ARTICLE;
     
@@ -76,48 +65,7 @@
     }
 }
 
-- (BOOL)webView:(UIWebView*)webView shouldStartLoadWithRequest:(NSURLRequest*)request navigationType:(UIWebViewNavigationType)navigationType
-{
-    if (navigationType == UIWebViewNavigationTypeLinkClicked) {
-        self.linkArticle = request.URL.absoluteString;
-        [self loadRequest];
-        return YES;
-    }
-    
-    return self.shouldRequest;
-}
-
-#pragma mark - Actions
-
-- (void)switchButtionClicked: (id)sender
-{
-    if (self.isReadingView) {
-        self.isReadingView = NO;
-        [self.switchButtion setTitle:@"Reading View"];
-        
-        [self loadRequest];
-    }
-    else{
-        self.isReadingView = YES;
-        [self.switchButtion setTitle:@"Web View"];
-        
-        [self readabilityWebpage];
-    }
-}
-
-- (void)reloadButtonClicked: (id)sender
-{
-     NSLog(@"%@", self.htmlString);
-}
-
 #pragma methods - Methods
-
-- (void)loadRequest
-{
-    NSURL *url = [[NSURL alloc] initWithString:self.linkArticle];
-    NSURLRequest *request = [[NSURLRequest alloc] initWithURL: url];
-    [self.webView loadRequest:request];
-}
 
 - (void)readabilityWebpage
 {
