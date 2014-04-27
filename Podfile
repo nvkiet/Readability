@@ -3,6 +3,7 @@
 
 target "Readability" do
 pod 'SVProgressHUD', '1.0'
+pod 'MMDrawerController', '0.5.4'
 end
 
 target "ReadabilityTests" do

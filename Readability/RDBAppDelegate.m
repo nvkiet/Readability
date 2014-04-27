@@ -9,22 +9,60 @@
 #import "RDBAppDelegate.h"
 #import "RDBReadingListViewController.h"
 
+@interface RDBAppDelegate ()
+@property (nonatomic,strong) MMDrawerController * drawerController;
+@end
+
 @implementation RDBAppDelegate
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    // Center view controller
+    RDBReadingListViewController *readingListVC = [[RDBReadingListViewController alloc] initWithNibName:NSStringFromClass([RDBReadingListViewController class]) bundle:nil];
+    UINavigationController *centerNavController = [[UINavigationController alloc] initWithRootViewController:readingListVC];
+    
+    // Left view controller
+    UIViewController * leftSideDrawerViewController = [[RDBLeftSideDrawerViewController alloc] init];
+    
+    self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:centerNavController leftDrawerViewController:leftSideDrawerViewController rightDrawerViewController:nil];
+    [self.drawerController setShowsShadow:NO];
+    
+    [self.drawerController setRestorationIdentifier:@"MMDrawer"];
+    [self.drawerController setMaximumRightDrawerWidth:200.0];
+    [self.drawerController setCloseDrawerGestureModeMask:MMCloseDrawerGestureModeAll];
+    
+    [self.drawerController
+     setDrawerVisualStateBlock:^(MMDrawerController *drawerController, MMDrawerSide drawerSide, CGFloat percentVisible) {
+         MMDrawerControllerDrawerVisualStateBlock block;
+         block = [[MMExampleDrawerVisualStateManager sharedManager]
+                  drawerVisualStateBlockForDrawerSide:drawerSide];
+         if(block){
+             block(drawerController, drawerSide, percentVisible);
+         }
+     }];
+
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    [self.window setRootViewController: self.drawerController];
+    
+    return YES;
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    RDBReadingListViewController *readingListVC = [[RDBReadingListViewController alloc] initWithNibName:NSStringFromClass([RDBReadingListViewController class]) bundle:nil];
-    
-    self.navController = [[UINavigationController alloc] initWithRootViewController:readingListVC];
-    self.window.rootViewController = self.navController;
+    [self setupApperances];
     
     [self.window makeKeyAndVisible];
-
+    
     return YES;
 }
-							
+
+/* Custom default setting */
+- (void)setupApperances
+{
+    [[UIBarButtonItem appearance] setTintColor:[UIColor redColor]];
+}
+
 - (void)applicationWillResignActive:(UIApplication *)application
 {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
