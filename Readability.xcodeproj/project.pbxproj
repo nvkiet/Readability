@@ -30,6 +30,8 @@
 		9297A227190D4B3100F0C7B1 /* Icon-iPhone@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9297A225190D4B3100F0C7B1 /* Icon-iPhone@2x.png */; };
 		9297A22C190D529E00F0C7B1 /* MMExampleDrawerVisualStateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9297A22B190D529E00F0C7B1 /* MMExampleDrawerVisualStateManager.m */; };
 		9297A25F190D664400F0C7B1 /* RDBLeftSideDrawerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9297A25E190D664400F0C7B1 /* RDBLeftSideDrawerViewController.m */; };
+		92ACA470190E6B7B009B92BD /* RDBArticleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 92ACA46E190E6B7B009B92BD /* RDBArticleCell.m */; };
+		92ACA473190E6BC3009B92BD /* RDBArticleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 92ACA472190E6BC3009B92BD /* RDBArticleCell.xib */; };
 		92B854EF190B570B0074F24B /* GothamNarrow-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D6190B570B0074F24B /* GothamNarrow-Black.otf */; };
 		92B854F0190B570B0074F24B /* GothamNarrSSm-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D7190B570B0074F24B /* GothamNarrSSm-Bold.otf */; };
 		92B854F1190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 92B854D8190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf */; };
@@ -102,6 +104,9 @@
 		9297A22B190D529E00F0C7B1 /* MMExampleDrawerVisualStateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMExampleDrawerVisualStateManager.m; sourceTree = "<group>"; };
 		9297A25D190D664400F0C7B1 /* RDBLeftSideDrawerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBLeftSideDrawerViewController.h; sourceTree = "<group>"; };
 		9297A25E190D664400F0C7B1 /* RDBLeftSideDrawerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBLeftSideDrawerViewController.m; sourceTree = "<group>"; };
+		92ACA46D190E6B7B009B92BD /* RDBArticleCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RDBArticleCell.h; sourceTree = "<group>"; };
+		92ACA46E190E6B7B009B92BD /* RDBArticleCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RDBArticleCell.m; sourceTree = "<group>"; };
+		92ACA472190E6BC3009B92BD /* RDBArticleCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RDBArticleCell.xib; sourceTree = "<group>"; };
 		92B854D6190B570B0074F24B /* GothamNarrow-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrow-Black.otf"; sourceTree = "<group>"; };
 		92B854D7190B570B0074F24B /* GothamNarrSSm-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrSSm-Bold.otf"; sourceTree = "<group>"; };
 		92B854D8190B570B0074F24B /* GothamNarrSSm-BoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GothamNarrSSm-BoldItalic.otf"; sourceTree = "<group>"; };
@@ -195,6 +200,7 @@
 			children = (
 				2E15813D1907691F0086C49E /* RDBAppDelegate.h */,
 				2E15813E1907691F0086C49E /* RDBAppDelegate.m */,
+				92ACA46B190E6B49009B92BD /* UIViews */,
 				2E158163190769840086C49E /* Controllers */,
 				2E15816A19077FC40086C49E /* Resouces */,
 				2E1581461907691F0086C49E /* Images.xcassets */,
@@ -316,6 +322,24 @@
 				9297A25E190D664400F0C7B1 /* RDBLeftSideDrawerViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		92ACA46B190E6B49009B92BD /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				92ACA46C190E6B49009B92BD /* UITableViewCells */,
+			);
+			path = UIViews;
+			sourceTree = "<group>";
+		};
+		92ACA46C190E6B49009B92BD /* UITableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				92ACA46D190E6B7B009B92BD /* RDBArticleCell.h */,
+				92ACA46E190E6B7B009B92BD /* RDBArticleCell.m */,
+				92ACA472190E6BC3009B92BD /* RDBArticleCell.xib */,
+			);
+			path = UITableViewCells;
 			sourceTree = "<group>";
 		};
 		92B854D5190B570B0074F24B /* Fonts */ = {
@@ -484,6 +508,7 @@
 				92B85512190B74E70074F24B /* RDBReadingListViewController.xib in Resources */,
 				92B85500190B570B0074F24B /* VitesseSSm-Bold.otf in Resources */,
 				92B854F9190B570B0074F24B /* readabilicons.otf in Resources */,
+				92ACA473190E6BC3009B92BD /* RDBArticleCell.xib in Resources */,
 				92B85503190B570B0074F24B /* VitesseSSm-BookItalic.otf in Resources */,
 				9297A222190D4B2700F0C7B1 /* LaunchImage-iPhone-568h@2x.png in Resources */,
 			);
@@ -538,6 +563,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9297A25F190D664400F0C7B1 /* RDBLeftSideDrawerViewController.m in Sources */,
+				92ACA470190E6B7B009B92BD /* RDBArticleCell.m in Sources */,
 				2E15813B1907691F0086C49E /* main.m in Sources */,
 				2E15813F1907691F0086C49E /* RDBAppDelegate.m in Sources */,
 				92B85511190B74E70074F24B /* RDBReadingListViewController.m in Sources */,

@@ -1,55 +1,71 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13C1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RDBReadingListViewController">
             <connections>
-                <outlet property="searchDisplayController" destination="9iO-Bw-E9t" id="yDr-rA-Su2"/>
+                <outlet property="searchBar" destination="b8v-qO-xur" id="hMM-Vi-6gI"/>
+                <outlet property="searchDisplayController" destination="lXm-EU-4h2" id="JmK-8h-DFc"/>
+                <outlet property="segmentedControl" destination="cg9-Ef-90H" id="BVX-XI-6q1"/>
+                <outlet property="tableHeaderView" destination="OfO-9I-2j9" id="sRi-EZ-FQj"/>
+                <outlet property="tableView" destination="Gbw-5g-aWZ" id="amD-cx-uKu"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <rect key="frame" x="0.0" y="64" width="320" height="504"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PzG-m2-D1A">
-                    <rect key="frame" x="0.0" y="62" width="320" height="44"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                    <textInputTraits key="textInputTraits"/>
-                    <connections>
-                        <outlet property="delegate" destination="-1" id="CkS-fZ-Co0"/>
-                    </connections>
-                </searchBar>
-                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="biY-kE-HJa">
-                    <rect key="frame" x="0.0" y="106" width="320" height="29"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <segments>
-                        <segment title="First"/>
-                        <segment title="Second"/>
-                        <segment title="Third"/>
-                    </segments>
-                </segmentedControl>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="r3R-7O-t3h">
-                    <rect key="frame" x="0.0" y="136" width="325" height="427"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="Gbw-5g-aWZ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <view key="tableHeaderView" contentMode="scaleToFill" id="OfO-9I-2j9">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search" id="b8v-qO-xur">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="-1" id="fcc-d5-DWI"/>
+                                </connections>
+                            </searchBar>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="cg9-Ef-90H">
+                                <rect key="frame" x="0.0" y="52" width="320" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                    <segment title="Third"/>
+                                </segments>
+                            </segmentedControl>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="mpd-F0-DSo"/>
+                        <outlet property="delegate" destination="-1" id="NQN-eR-NFH"/>
+                    </connections>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
-        <searchDisplayController id="9iO-Bw-E9t">
+        <searchDisplayController id="lXm-EU-4h2">
             <connections>
-                <outlet property="delegate" destination="-1" id="rIB-ee-RKh"/>
-                <outlet property="searchBar" destination="PzG-m2-D1A" id="oCm-OR-e8P"/>
-                <outlet property="searchContentsController" destination="-1" id="oJ7-wu-csk"/>
-                <outlet property="searchResultsDataSource" destination="-1" id="Z5F-Te-6Pw"/>
-                <outlet property="searchResultsDelegate" destination="-1" id="hx0-bX-1ph"/>
+                <outlet property="delegate" destination="-1" id="aRA-Oo-Vdm"/>
+                <outlet property="searchBar" destination="b8v-qO-xur" id="OOh-uk-36o"/>
+                <outlet property="searchContentsController" destination="-1" id="2LD-rD-z96"/>
+                <outlet property="searchResultsDataSource" destination="-1" id="QeI-Kd-pid"/>
+                <outlet property="searchResultsDelegate" destination="-1" id="1qZ-p9-SqD"/>
             </connections>
         </searchDisplayController>
     </objects>
