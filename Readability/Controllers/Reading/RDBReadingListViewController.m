@@ -8,6 +8,7 @@
 
 #import "RDBReadingListViewController.h"
 #import "RDBArticleCell.h"
+#import "RDBArticleViewController.h"
 
 @interface RDBReadingListViewController ()<UISearchDisplayDelegate,UISearchBarDelegate, UITableViewDelegate, UITableViewDataSource>
 @property (nonatomic, strong) UIRefreshControl *refreshControl;
@@ -72,21 +73,30 @@
     return cell;
 }
 
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 130.0;
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 130;
 }
 
 #pragma mark - Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    RDBArticleViewController *articleVC = [[RDBArticleViewController alloc] initWithNibName:NSStringFromClass([RDBArticleViewController class]) bundle:nil];
+    [self.navigationController pushViewController:articleVC animated:YES];
 }
 
 #pragma mark - UISearchDisplayDelegate
 
 - (void)searchDisplayControllerDidBeginSearch:(UISearchDisplayController *)controller
 {
+}
+
+- (void)searchDisplayControllerDidEndSearch:(UISearchDisplayController *)controller
+{
+    [self.searchBar removeFromSuperview];
+    self.searchBar.frame = CGRectMake(0, 0, 320, 44);
+    [self.tableHeaderView addSubview:self.searchBar];
 }
 
 #pragma mark - UISearchBarDelegate
@@ -99,7 +109,6 @@
 - (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar
 {
     self.segmentedControl.hidden = NO;
-    self.tableView.tableHeaderView = self.tableHeaderView;
 }
 
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
